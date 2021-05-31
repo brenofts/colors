@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="desktop.css">
+  <link rel="stylesheet" href="mobile.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Color Picker</title>
+</head>
+<body>
+  <div class="menu">
+    <div class="value" id="redValue"></div>
+  <input class="color" type="range" value="255" min="0" max="255" id="red">
+  <div class="value" id="greenValue"></div>
+  <input class="color" type="range" value="255" min="0" max="255" id="green">
+  <div class="value" id="blueValue"></div>
+  <input class="color" type="range" value="255" min="0" max="255" id="blue">
+  </div>
+  <div id="rgb"></div>
+  <div class="hidden" id="modal"></div>
+  <script src="script.js"></script>
+</body>
+</html>
