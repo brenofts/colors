@@ -2,8 +2,37 @@
 	body {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-end;
-    align-items: flex-end;
+		justify-content: space-evenly;
+    align-items: center;
+	}
+
+	#inputName {
+		display: flex;
+		border: 0;
+		opacity: 30%;
+		height: 9vh;
+		width: 70vw;
+		margin-top: -10vh;
+		border-start-start-radius: 70px;
+		border-start-end-radius: 70px;
+		border-end-end-radius: 30px;
+		border-end-start-radius: 30px;
+		color: grey;
+		text-align: center;
+		font-size: 2.5em;
+		font-style: oblique;
+		font-weight: bold;
+		text-transform: uppercase;
+		animation-timing-function: ease;
+	}
+
+	@keyframes showInput {
+		from {margin-top: -10vh}
+		to {margin-top: 2vh}
+	}
+	@keyframes hideInput {
+		from {margin-top: 2vh}
+		to {margin-top: -10vh}
 	}
 
 	.menu {
@@ -13,9 +42,10 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		margin-right: 2vw;
+		margin-bottom: 5vh;
 	}
 
-	input {
+	input[type=range] {
 		-webkit-appearance: none;
 		height: 20px;
 		width: 70%;
@@ -25,9 +55,9 @@
 		rotate: 45px;
 	}
 
-	input:active {
+	/* input:active {
 		outline-style: none;
-	}
+	} */
 
 	input::-webkit-slider-thumb {
     -webkit-appearance: none;
